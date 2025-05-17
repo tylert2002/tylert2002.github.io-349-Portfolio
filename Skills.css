@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+}
+
+
+.skills h1{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+    background-color: orange;
+}
+
+
+h3 {
+    font-size: 1.5em;
+    text-indent: 20px;
+}
+
+
+.navbar {
+    background-color: lightgreen; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    width: 100%; 
+}
+
+
+.navbar ul {
+    list-style: none; 
+    display: flex; 
+}
+
+
+.navbar ul li {
+    margin-right: 20px; 
+}
+
+
+.navbar ul li a {
+    color: blue; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 1.1em; 
+}
+
+
+.rightNav {
+    display: flex; 
+    align-items: center; 
+}
+
+
+.rightNav input[type="text"] {
+    padding: 5px 10px; 
+    border: 1px solid lightgrey; 
+    border-radius: 5px 0 0 5px; 
+    outline: none; 
+    font-size: 1em; 
+}
+
+
+.rightNav .search-button {
+    background-color: orange; 
+    color: black; 
+    border: none; 
+    padding: 5px 15px; 
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer; 
+    font-size: 1em; 
+    font-weight: bold; 
+}
+
+
+.skills-section {
+    padding: 40px 20px;
+    background-color: lightcoral;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    margin: 20px auto; 
+    max-width: 900px;
+}
+
+.skills-category {
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    list-style: none;
+    padding-left: 40px;
+}
+
+.skills-list li {
+    font-size: 1.1em;
+    color: black;
+    padding: 10px 0;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    
+    .skills-section {
+        margin: 10px;
+        padding: 20px 15px;
+    }
+    .skills-list li {
+        font-size: 1em;
+    }
+    .csuf-pic {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul li {
+        margin: 5px 0;
+    }
+    .rightNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .rightNav input,
+    .rightNav button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

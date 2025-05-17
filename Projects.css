@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url("green-tea.jpg");
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
+    background-color: beige;
+    font-family: Arial, sans-serif;
+}
+
+.projects h1 {
+    text-align: left;
+    padding: 40px 0;
+    font-size: 2em;
+    background-color: orange;
+    padding-left: 15px;
+}
+
+.navbar {
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navbar ul li a.active {
+    color: darkblue;
+    border-bottom: 2px solid darkblue;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+}
+
+.rightNav input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1em;
+}
+
+.rightNav .search-button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.rightNav .search-button:hover {
+    background-color: yellow;
+}
+
+.syntax-analyzer-pic1 {
+    margin-right: 20px;
+    margin-left: 15px;
+
+}
+
+.syntax-analyzer-pic2 {
+    margin-right: 20px;
+    margin-left: 15px;
+
+}
+
+.syntax-analyzer-pic3 {
+    margin-right: 20px;
+    margin-left: 15px;
+
+}
+
+.optimization-pic1 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.optimization-pic2 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.optimization-pic3 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.optimization-pic4 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.optimization-pic5 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.optimization-pic6 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.optimization-pic7 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.optimization-pic8 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.output-pic1 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.output-pic2 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.output-pic3 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.output-pic4 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.output-pic5 {
+    margin-right: 20px;
+    margin-left: 15px;
+}
+
+.projects-section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px black;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    display: inline-block;
+    color: blue; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: darkblue; 
+}
+
+
+.project-details {
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.project-details h2 {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.project-details h3 {
+    font-size: 1.5em;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 1em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: darkblue;
+}
+
+
+@media (max-width: 576px) {
+    .projects-section,
+    .project-details {
+        margin: 10px;
+        padding: 20px 15px;
+    }
+    .project-card h3,
+    .project-details h2 {
+        font-size: 1.5em;
+    }
+    .project-card p,
+    .project-details p {
+        font-size: 0.9em;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul li {
+        margin: 5px 0;
+    }
+    .rightNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .rightNav input,
+    .rightNav button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

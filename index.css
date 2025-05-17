@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    font-family: Arial, sans-serif;
+}
+
+.home h1 {
+    text-align: left;
+    padding: 40px 0;
+    font-size: 2em;
+    background-color: orange;
+    padding-left: 15px;
+}
+
+.navbar {
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navbar ul li a.active {
+    color: darkblue;
+    border-bottom: 2px solid darkblue;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+}
+
+.rightNav input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1em;
+}
+
+.rightNav .search-button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.rightNav .search-button:hover {
+    background-color: yellow;
+}
+
+
+.intro-section {
+    padding: 40px 20px;
+    margin: 20px auto;
+}
+
+.bio-section {
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    padding: 20px;
+}
+
+.bio-section h2 {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.bio-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bio-section ul li {
+    font-size: 1em;
+    color: black;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+
+.tyler-pic,
+.tuffy-pic {
+    max-width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    transition: transform 0.3s ease;
+}
+
+
+.tagline-section {
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.tagline-section h3 {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: black;
+    font-style: italic;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+@media (max-width: 767px) {
+    .intro-section {
+        padding: 20px 15px;
+    }
+    .intro-section .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tyler-pic,
+    .tuffy-pic {
+        max-width: 80%;
+        margin: 20px 0;
+    }
+    .bio-section {
+        margin: 20px 10px;
+    }
+    .bio-section h2 {
+        font-size: 1.3em;
+    }
+    .bio-section ul li {
+        font-size: 0.9em;
+    }
+    .tagline-section h3 {
+        font-size: 1.3em;
+    }
+    .tagline {
+        font-size: 1em;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul li {
+        margin: 5px 0;
+    }
+    .rightNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .rightNav input,
+    .rightNav button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

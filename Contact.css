@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image:url("team.jpg");
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
+    font-family: Arial, sans-serif;
+}
+
+.bg {
+    background-image: url("team.jpg");
+  
+    height: 100%; 
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+.contact h1{
+    text-align: left;
+    padding: 40px 0;
+    font-size: 2em;
+    background-color: orange;
+    padding-left: 15px;
+}
+
+
+
+.navbar {
+    background-color: lightgreen; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    width: 100%; 
+}
+
+
+.navbar ul {
+    list-style: none; 
+    display: flex; 
+}
+
+
+.navbar ul li {
+    margin-right: 20px; 
+}
+
+
+.navbar ul li a {
+    color: blue; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 1.1em; 
+}
+
+.navbar ul li a.active {
+    color: darkblue;
+    border-bottom: 2px solid darkblue;
+}
+
+
+.rightNav {
+    display: flex; 
+    align-items: center; 
+}
+
+
+.rightNav input[type="text"] {
+    padding: 5px 10px; 
+    border: 1px solid lightgrey; 
+    border-radius: 5px 0 0 5px; 
+    outline: none; 
+    font-size: 1em; 
+}
+
+
+.rightNav .search-button {
+    background-color: orange; 
+    color: #333; 
+    border: none; 
+    padding: 5px 15px; 
+    border-radius: 0 5px 5px 0; 
+    cursor: pointer; 
+    font-size: 1em; 
+    font-weight: bold; 
+}
+
+.rightNav .search-button:hover {
+    background-color: yellow; 
+}
+
+/* New styles for contact section */
+.contact-section {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for readability over background image */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.form-control {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: orange; /* Match the orange theme */
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+.btn-primary {
+    background-color: orange;
+    border: none;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: yellow;
+    transform: translateY(-2px);
+}
+
+.social-links h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: blue; 
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: darkblue; 
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 576px) {
+    .contact-section {
+        margin: 10px;
+        padding: 20px 15px;
+    }
+    .social-links a {
+        font-size: 1.2rem;
+        margin: 0 8px;
+    }
+    .rightNav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .rightNav input,
+    .rightNav button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar ul li {
+        margin: 5px 0;
+    }
+}
+
+
+
+
